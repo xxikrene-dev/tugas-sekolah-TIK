@@ -1,0 +1,145 @@
+body{
+    background-color: bisque;
+    background-image: url("vintagebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2{
+    background-color:#B69992;
+    color: #341D17;
+    text-align: center;
+}
+h1{
+    background-color:#341D17;
+    color:#D1A7A0;
+    text-align:center;
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: white;
+    background-image: url("paperbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #341D17;
+    padding: 30px;
+    border-radius: 12px;
+    outline: 4px wavy brown; 
+    outline-offset: 4px;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto {
+    position: relative; 
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #341D17;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+div.foto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+div.foto img.top {
+    z-index: 2;
+    opacity: 1;
+}
+div.foto img.bottom {
+    z-index: 1;
+}
+div.foto:hover img.top {
+    opacity: 0; 
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;       
+    align-items: center;       
+    gap: 30px;                 
+}
+
+
+.teks-biodata {
+    flex: 1;
+    text-align: left;         
+}
+
+.teks-biodata p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+h3{
+    background-color:#341D17;
+    color:#D1A7A0;
+    text-align:center;
+}
+
+.gallery {
+  display: flex;            
+  justify-content: center;   
+  gap: 15px;                 
+  flex-wrap: wrap;           
+}
+
+.food {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border: 3px solid white;
+  border-radius: 12px;
+} 
+.inggris {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border: 3px solid white;
+  border-radius: 12px;
+} 
+.indo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border: 3px solid white;
+  border-radius: 12px;
+} 
+.matpel {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border: 3px solid white;
+  border-radius: 12px;
+} 
+.celebrity {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border: 3px solid white;
+    border-radius: 12px;
+}
+.hobi {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border: 3px solid white;
+    border-radius: 12px; 
+}
